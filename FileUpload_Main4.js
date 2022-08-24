@@ -1,6 +1,6 @@
 (function() {
     
-	let _shadowRoot;
+    let _shadowRoot;
     let _id;
     let _result ;
 
@@ -98,7 +98,7 @@
 
 
 
-		//Getter & Setter
+	    //Getter & Setter
 		get unit() {
 			return this._export_settings.unit;
 		}
@@ -112,7 +112,7 @@
 		
 		
 		
-		static get observedAttributes() {
+	static get observedAttributes() {
             return [
                 "unit"
             ];
