@@ -1,6 +1,6 @@
 (function() {
     
-	let _shadowRoot;
+    let _shadowRoot;
     let _id;
     let _result ;
 
@@ -20,14 +20,14 @@
 
         constructor() {
 			
-			super();
+	    super();
 
-			_shadowRoot = this.attachShadow({mode: "open"});
-			_shadowRoot.appendChild(tmpl.content.cloneNode(true));
-			_id = createGuid();
-			
-			
-			this._export_settings = {};
+	    _shadowRoot = this.attachShadow({mode: "open"});
+	    _shadowRoot.appendChild(tmpl.content.cloneNode(true));
+	    _id = createGuid();
+
+
+	    this._export_settings = {};
             this._export_settings.title = "";
             this._export_settings.subtitle = "";
             this._export_settings.icon = "";
@@ -35,9 +35,9 @@
             this._export_settings.footer = "";
 			
 
-			this.addEventListener("click", event => {console.log('click');});
-			
-			this._firstConnection = 0;  
+	    this.addEventListener("click", event => {console.log('click');});
+
+	    this._firstConnection = 0;  
 		
         }
 
@@ -116,7 +116,7 @@
 
 
 
-		//Getter & Setter
+	//Getter & Setter
 		get unit() {
 			return this._export_settings.unit;
 		}
@@ -130,7 +130,7 @@
 		
 		
 		
-		static get observedAttributes() {
+	static get observedAttributes() {
             return [
                 "unit"
             ];
