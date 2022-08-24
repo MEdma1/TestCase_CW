@@ -53,7 +53,7 @@
       </form>
     `;
 
-    class FileUplMaEr4 extends HTMLElement {
+    class ExcelAps extends HTMLElement {
         constructor() {
             super();
             this._shadowRoot = this.attachShadow({ mode: "open" });
